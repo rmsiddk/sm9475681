@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>나만의 중고마켓</title>
+    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        /* 꾸미기 */
+        .hero {
+            background-color: none;
+            background-image: url('https://blogfiles.pstatic.net/MjAyMzA3MTFfOTYg/MDAxNjg5MDcyMjA3NjM3.Pwbzb5jXC-uhZEfyf_NqEJmBRNUx1zea-UA12BRjtIEg.yYowodi4MJb_mbdZ997S6atozFPJhPc6aeTrBzVgnOMg.JPEG.whtnalss/logo.jpg');
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-title {
+            color: white;
+        }
+
+        .hero-subtitle {
+            color: white;
+        }
+
+        .card-section {
+            padding: 50px 0;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        /* 메뉴바 스타일 */
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: yellow;
+        }
+
+        .hero {
+    background-size: 20*10;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- 뼈대 잡기 -->
+<section class="hero" style="background-image: url(iogo.jpg); background-size: 50% auto;">
+    <div class="container">
+    </div>
+  </section>
+
+    
+   <!-- 메뉴바 -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">나만의 중고마켓</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/user/Desktop/GPT/bestproduct.html">베스트상품</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/user/Desktop/GPT/newproduct.html">신상품</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/user/Desktop/GPT/recommendproduct.html">추천상품</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-auto">
+                <input class="form-control me-2" type="search" placeholder="검색" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">검색</button>
+                
+            </form>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/eldorado/Desktop/조수민%20챗/login.html">로그인</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/eldorado/Desktop/조수민%20챗/회원가입.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<style>
+    /* 기존 스타일 유지 */
+
+    /* 카테고리 간격 조정 */
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+</style>
+
+
+    <div class="container">
+        <!-- 베스트상품 -->
+        <h3>베스트상품</h3>
+        <div class="row">
+            <!-- 베스트상품 카드 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="file:///C:/Users/eldorado/Desktop/조수민%20챗/product1.html">
+                        <img src="c:\Users\aaj\Desktop\GPT\롤케이크.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">롤케이크</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">2만원</h6>
+                        <p class="card-text">부드러운 롤케이크</p>
+                        <button class="btn btn-primary">장바구니에 추가</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 베스트상품 카드 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="file:///C:/Users/eldorado/Desktop/조수민%20챗/product2.html">
+                        <img src="c:\Users\aaj\Desktop\GPT\설탕공예.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">설탕공예</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">1만원</h6>
+                        <p class="card-text">다양한 디자인의 설탕공예</p>
+                        <button class="btn btn-primary">장바구니에 추가</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 베스트상품 카드 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="file:///C:/Users/eldorado/Desktop/조수민%20챗/product2.html">
+                        <img src="c:\Users\aaj\Desktop\GPT\조랭1.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">조랭이1</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">10000해</h6>
+                        <p class="card-text">귀여운 누워있는 조랭이</p>
+                        <button class="btn btn-primary">장바구니에 추가</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <!-- 추천상품 -->
+                <h3>추천상품</h3>
+                <div class="row">
+                    <!-- 추천상품 카드 1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="file:///C:/Users/eldorado/Desktop/조수민%20챗/product1.html">
+                                <img src="c:\Users\aaj\Desktop\GPT\조랭2.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">조랭이2</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">10000해/h6>
+                                <p class="card-text">지브리 감성 조랭이</p>
+                                <button class="btn btn-primary">장바구니에 추가</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 추천상품 카드 2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="file:///C:/Users/eldorado/Desktop/조수민%20챗/product2.html">
+                                <img src="c:\Users\aaj\Desktop\GPT\조랭3.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">조랭이3</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">10000해</h6>
+                                <p class="card-text">빵봉지 조랭이</p>
+                                <button class="btn btn-primary">장바구니에 추가</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- 추천상품 카드 3 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="file:///C:/Users/eldorado/Desktop/조수민%20챗/product2.html">
+                                <img src="c:\Users\aaj\Desktop\GPT\조랭4.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">조랭이4</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">10000해</h6>
+                                <p class="card-text">그냥 귀여운 조랭이</p>
+                                <button class="btn btn-primary">장바구니에 추가</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <!-- 신상품 -->
+                        <h3>신상품</h3>
+                        <div class="row">
+                            <!-- 신상품 카드 1 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <a href="file:///C:/Users/eldorado/Desktop/조수민%20챗/product1.html">
+                                        <img src="c:\Users\aaj\Desktop\GPT\조랭5.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">조랭이5</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">10000해</h6>
+                                        <p class="card-text">잠든 사랑스러운 조랭이</p>
+                                        <button class="btn btn-primary">장바구니에 추가</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 신상품 카드 2 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <a href="file:///C:/Users/eldorado/Desktop/조수민%20챗/product2.html">
+                                        <img src="c:\Users\aaj\Desktop\GPT\조랭6.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">조랭이6</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">10000해</h6>
+                                        <p class="card-text">동글동글한 어린 조랭이</p>
+                                        <button class="btn btn-primary">장바구니에 추가</button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- 신상품 카드 3 -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <a href="file:///C:/Users/user/Desktop/GPT/index.html">
+                                        <img src="c:\Users\aaj\Desktop\GPT\조랭7.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">조랭이7</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">10000해</h6>
+                                        <p class="card-text">돼지같은 조랭이</p>
+                                        <button class="btn btn-primary">장바구니에 추가</button>
+                                    </div>
+                                </div>
+                            </div>
