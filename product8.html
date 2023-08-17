@@ -116,6 +116,8 @@
     }
 </style>
 
+
+
 <html>
 <head>
   <title>상세페이지</title>
@@ -135,6 +137,40 @@
       flex: 2;
       padding: 20px;
     }
+
+    .popup-background {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1001;
+  width: 400px; /* 원하는 가로 크기로 변경 */
+  height: 100px; /* 원하는 세로 크기로 변경 */
+
+
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -149,6 +185,27 @@
       <button class="btn btn-primary">장바구니에 추가</button>
     </div>
   </div>
+
+  <div class="popup-background" id="popupBackground">
+    <div class="popup" id="popup">
+      <span class="popup-close" id="popupClose">닫기</span>
+      <p>장바구니에 추가되었습니다</p>
+    </div>
+  </div>
+
+  <script>
+    const addToCartButton = document.getElementById("addToCart");
+    const popupBackground = document.getElementById("popupBackground");
+    const popup = document.getElementById("popup");
+    const popupClose = document.getElementById("popupClose");
+
+    addToCartButton.addEventListener("click", () => {
+      popupBackground.style.display = "block";
+    });
+
+    popupClose.addEventListener("click", () => {
+      popupBackground.style.display = "none";
+    });
+  </script>
 </body>
 </html>
-
