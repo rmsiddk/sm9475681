@@ -1,4 +1,121 @@
 <!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>웜브레드</title>
+    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        /* 꾸미기 */
+        .hero {
+            background-color: #d2a86e;
+            background-image: url("logo.jpg");
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-title {
+            color: white;
+        }
+
+        .hero-subtitle {
+            color: white;
+        }
+
+        .card-section {
+            padding: 50px 0;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        /* 메뉴바 스타일 */
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: yellow;
+        }
+
+        .hero {
+    background-size: 20*10;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- 뼈대 잡기 -->
+<section class="hero"  style="background-color: #d2a86e; style="background-image src='logo.jpg' background-size: 1000% auto;">
+    <div class="container">
+    </div>
+  </section>
+
+    
+    <!-- 메뉴바 -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">웜브레드</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="bread.html">빵류</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cookie.html">과자류</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="drink.html">음료</a>
+                </li>
+            </ul>
+             <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="검색" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style="width: 100px;" >검색</button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">로그인</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="join.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<style>
+    /* 기존 스타일 유지 */
+
+    /* 카테고리 간격 조정 */
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+</style>
 <html>
 <head>
   <title>상세페이지</title>
