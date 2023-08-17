@@ -1,4 +1,48 @@
 <!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>웜브레드 배송관련 안내</title>
+    <style>
+        /* 스타일은 필요에 따라 수정 가능 */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- 팝업 창 내용 -->
+    <div class="popup" id="popup">
+        <h2>웜브레드 배송관련 안내</h2>
+        <p>8월 17일부터 8월 20일까지 웜브레드 휴가기간으로 택배발송이 어렵습니다.
+        이 점 참고하셔서 주문 부탁드립니다 :) </p>
+        <button onclick="closePopup()">닫기</button>
+    </div>
+
+    <script>
+        // 페이지 로드 시 팝업 창을 띄우는 함수
+        window.onload = function () {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        // 팝업 창 닫는 함수
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
 <html lang="en">
 
 <head>
