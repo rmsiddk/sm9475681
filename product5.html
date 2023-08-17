@@ -115,17 +115,40 @@
         margin-right: 10px;
     }
 </style>
+
 <html>
 <head>
   <title>상세페이지</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .product-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .product-text {
+      flex: 2;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <div>
-    <img src="케이크.jpg" alt="케이크.jpg" style="width: 300px; height: auto;">
-    <h1>생크림케이크</h1>
-    <p>3만원</p>
-    <p>가격: 초코칩과 체리로 장식된 생크림케이크</p>
-    <button class="btn btn-primary">장바구니에 추가</button>
+  <div class="container">
+    <div class="product-image">
+      <img src="케이크.jpg" alt="케이크.jpg" style="width: 300px; height: auto;">
+    </div>
+    <div class="product-text">
+      <h1>생크림케이크</h1>
+      <p>초코칩과 체리로 장식된 부드러운 생크림케이크</p>
+      <p>가격: 3만원</p>
+      <button class="btn btn-primary">장바구니에 추가</button>
+    </div>
   </div>
 </body>
 </html>
+
