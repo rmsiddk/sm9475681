@@ -107,42 +107,51 @@
 </nav>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>로그인</title>
-    <style>
-        /* 로그인 폼을 가운데로 정렬하는 스타일 */
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh; /* 화면 전체 높이 만큼 최소 높이 설정 */
-            margin: 0;
-            background-color: #f0f0f0;
-        }
+  <title>로그인</title>
+  <style>
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-        .login-form {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    .registration-form {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="login-form">
-        <h2>로그인</h2>
-        <form action="/login" method="POST">
-            <label for="email">이메일:</label>
-            <input type="email" id="email" name="email" required><br><br>
-          
-            <label for="password">비밀번호:</label>
-            <input type="password" id="password" name="password" required><br><br>
-          
-            <input type="submit" value="로그인">
-        </form>
+  <div class="center-container">
+    <div class="registration-form">
+      <h2>로그인</h2>
+      <form action="/signup" method="POST">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br><br>
+      
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password" name="password" required><br><br>
+      
+        <input type="submit" value="로그인">
+      </form>
     </div>
+  </div>
 </body>
 </html>
