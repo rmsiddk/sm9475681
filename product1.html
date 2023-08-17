@@ -145,21 +145,22 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 1000;
-  width: 400px; /* 원하는 가로 크기로 변경 */
-  height: 200px; /* 원하는 세로 크기로 변경 */
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       background-color: white;
       padding: 20px;
       border: 1px solid #ccc;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       z-index: 1001;
-      text-align: center;
-      position: relative;
+  width: 400px; /* 원하는 가로 크기로 변경 */
+  height: 200px; /* 원하는 세로 크기로 변경 */
+
+
     }
 
     .popup-close {
@@ -197,7 +198,7 @@
     const popupClose = document.getElementById("popupClose");
 
     addToCartButton.addEventListener("click", () => {
-      popupBackground.style.display = "flex";
+      popupBackground.style.display = "block";
     });
 
     popupClose.addEventListener("click", () => {
