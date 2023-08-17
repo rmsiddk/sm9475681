@@ -13,12 +13,11 @@
       .hero {
             background-color: #d2a86e;
             background-image: url("logo.jpg");
-             background-size: 50%;
+            background-size: 50%;
             background-position: center center; /* Center the background image */
             text-align: center;
             padding: 100px 0;
         }
-
         .hero-title {
             color: white;
         }
@@ -109,50 +108,30 @@
 <html>
 <head>
   <title>회원가입</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-    }
-
-    form {
-      text-align: center;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    label, input {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    input[type="submit"] {
-      background-color: #333;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
+  <h2>회원가입</h2>
   <form action="/signup" method="POST">
-    <h2>회원가입</h2>
     <label for="name">이름:</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" id="name" name="name" required><br><br>
   
     <label for="email">이메일:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required><br><br>
   
     <label for="password">비밀번호:</label>
-    <input type="password" id="password" name="password" required>
+    <input type="password" id="password" name="password" required><br><br>
   
     <input type="submit" value="가입하기">
   </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>링크 버튼</title>
+</head>
+<body>
+  <a href="file:///C:/Users/eldorado/Desktop/조수민%20챗/index.html#">이동하기</a>
 </body>
 </html>
