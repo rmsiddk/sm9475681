@@ -1,4 +1,49 @@
 <!doctype html>
+
+<html>
+<head>
+    <title>warmbread</title>
+    <style>
+        /* 스타일은 필요에 따라 수정 가능 */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* 팝업창이 다른 요소 위에 나오도록 설정 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 팝업 창 내용 -->
+    <div class="popup" id="popup">
+        <h2>웜브레드 배송관련 안내</h2>
+        <p>8월 17일부터 8월 20일까지 웜브레드 휴가기간으로 택배발송이 어렵습니다.
+        이 점 참고하셔서 주문 부탁드립니다 :) </p>
+        <button onclick="closePopup()">닫기</button>
+    </div>
+
+    <script>
+        // 페이지 로드 시 팝업 창을 띄우는 함수
+        window.onload = function () {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        // 팝업 창 닫는 함수
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
 <html lang="en">
 
 <head>
@@ -10,13 +55,14 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
         /* 꾸미기 */
-        .hero {
+      .hero {
             background-color: #d2a86e;
             background-image: url("logo.jpg");
+            background-size: 50%;
+            background-position: center center; /* Center the background image */
             text-align: center;
             padding: 100px 0;
         }
-
         .hero-title {
             color: white;
         }
@@ -62,7 +108,7 @@
 <body>
 
     <!-- 뼈대 잡기 -->
-<section class="hero" style="background-color: brown; style="background-image src='logo.jpg' background-size: 1000% auto;">
+<section class="hero"  style="background-color: #d2a86e; style="background-image src='logo.jpg' background-size: 1000% auto;">
     <div class="container">
     </div>
   </section>
