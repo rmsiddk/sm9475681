@@ -171,39 +171,41 @@
     }
   </style>
 </head>
+ 
 <body>
-  <div class="container">
-    <div class="product-image">
-      <img src="롤케이크.jpg" alt="롤케이크.jpg" style="width: 300px; height: auto;">
+    <div class="container">
+        <div class="product-image">
+            <img src="롤케이크.jpg" alt="롤케이크.jpg" style="width: 300px; height: auto;">
+        </div>
+        <div class="product-text">
+            <h1>롤케이크</h1>
+            <p>딸기쨈이 들어간 달콤하고 부드러운 롤케이크</p>
+            <p>가격: 2만원</p>
+            <button class="btn btn-primary" id="addToCart">장바구니에 추가</button>
+        </div>
     </div>
-    <div class="product-text">
-      <h1>롤케이크</h1>
-      <p>딸기쨈이 들어간 달콤하고 부드러운 롤케이크</p>
-      <p>가격: 2만원</p>
-      <button class="btn btn-primary" id="addToCart">장바구니에 추가</button>
+
+    <div class="popup-background" id="popupBackground">
+        <div class="popup" id="popup">
+            <span class="popup-close" id="popupClose">닫기</span>
+            <p>장바구니에 추가되었습니다</p>
+        </div>
     </div>
-  </div>
 
-  <div class="popup-background" id="popupBackground">
-    <div class="popup" id="popup">
-      <span class="popup-close" id="popupClose">닫기</span>
-      <p>장바구니에 추가되었습니다</p>
-    </div>
-  </div>
+    <script>
+        const addToCartButton = document.getElementById("addToCart");
+        const popupBackground = document.getElementById("popupBackground");
+        const popup = document.getElementById("popup");
+        const popupClose = document.getElementById("popupClose");
 
-  <script>
-    const addToCartButton = document.getElementById("addToCart");
-    const popupBackground = document.getElementById("popupBackground");
-    const popup = document.getElementById("popup");
-    const popupClose = document.getElementById("popupClose");
+        addToCartButton.addEventListener("click", () => {
+            popupBackground.style.display = "flex"; // 수정된 부분
+        });
 
-    addToCartButton.addEventListener("click", () => {
-      popupBackground.style.display = "block";
-    });
-
-    popupClose.addEventListener("click", () => {
-      popupBackground.style.display = "none";
-    });
-  </script>
+        popupClose.addEventListener("click", () => {
+            popupBackground.style.display = "none";
+        });
+    </script>
 </body>
+
 </html>
