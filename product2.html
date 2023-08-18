@@ -185,25 +185,26 @@
   </div>
 
   <div class="popup-background" id="popupBackground">
-    <div class="popup" id="popup">
-      <span class="popup-close" id="popupClose">닫기</span>
-      <p>장바구니에 추가되었습니다</p>
+        <div class="popup" id="popup">
+            <span class="popup-close" id="popupClose">닫기</span>
+            <p>장바구니에 추가되었습니다</p>
+        </div>
     </div>
-  </div>
 
-  <script>
-    const addToCartButton = document.getElementById("addToCart");
-    const popupBackground = document.getElementById("popupBackground");
-    const popup = document.getElementById("popup");
-    const popupClose = document.getElementById("popupClose");
+    <script>
+        const addToCartButton = document.getElementById("addToCart");
+        const popupBackground = document.getElementById("popupBackground");
+        const popup = document.getElementById("popup");
+        const popupClose = document.getElementById("popupClose");
 
-    addToCartButton.addEventListener("click", () => {
-      popupBackground.style.display = "block";
-    });
+        addToCartButton.addEventListener("click", () => {
+            popupBackground.style.display = "flex"; // 수정된 부분
+        });
 
-    popupClose.addEventListener("click", () => {
-      popupBackground.style.display = "none";
-    });
-  </script>
+        popupClose.addEventListener("click", () => {
+            popupBackground.style.display = "none";
+        });
+    </script>
 </body>
+
 </html>
