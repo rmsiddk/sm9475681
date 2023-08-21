@@ -107,34 +107,37 @@
     </div>
 </nav>
     
-<div class="popup" id="cartPopup">
-    <span class="popup-close" onclick="closePopup()">&times;</span>
-    <h2>장바구니에 상품이 추가되었습니다!</h2>
-    <p>원하는 상품이 장바구니에 추가되었습니다.</p>
-</div>
-
 <script>
-    // 팝업 열기
-    function openPopup() {
-        document.getElementById("cartPopup").style.display = "block";
-    }
-
-    // 팝업 닫기
-    function closePopup() {
-        document.getElementById("cartPopup").style.display = "none";
-    }
-
-    // 장바구니에 추가 버튼 클릭 시 팝업 띄우기
-    document.addEventListener("DOMContentLoaded", function () {
-        var addToCartButtons = document.querySelectorAll(".btn-primary");
-
-        for (var i = 0; i < addToCartButtons.length; i++) {
-            addToCartButtons[i].addEventListener("click", function () {
-                openPopup();
-            });
+        // 팝업 열기
+        function openPopup() {
+            document.getElementById("cartPopup").style.display = "block";
         }
-    });
-</script>
+
+        // 팝업 닫기
+        function closePopup() {
+            document.getElementById("cartPopup").style.display = "none";
+        }
+
+        // 장바구니에 추가 버튼 클릭 시 팝업 띄우기
+        document.addEventListener("DOMContentLoaded", function () {
+            var addToCartButtons = document.querySelectorAll(".btn-primary");
+
+            for (var i = 0; i < addToCartButtons.length; i++) {
+                addToCartButtons[i].addEventListener("click", function () {
+                    openPopup();
+                });
+            }
+        });
+    </script>
+
+    <div class="popup" id="cartPopup">
+        <span class="popup-close" onclick="closePopup()">&times;</span>
+        <h2>장바구니에 상품이 추가되었습니다!</h2>
+        <p>원하는 상품이 장바구니에 추가되었습니다.</p>
+    </div>
+</body>
+
+</html>
 
 
 <style>
